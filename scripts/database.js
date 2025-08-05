@@ -2,34 +2,34 @@ const parkAreas = [
   {
     id: 1,
     name: "Chamfort River",
-    direction: "northeast"
+    direction: "northeast",
   },
   {
     id: 2,
     name: "Lost Wolf Hiking Trail",
-    direction: "north"
+    direction: "north",
   },
   {
     id: 3,
     name: "Lodge Area",
-    direction: "northwest"
+    direction: "northwest",
   },
   {
     id: 4,
     name: "Gander River",
-    direction: "southwest"
+    direction: "southwest",
   },
   {
     id: 5,
     name: "Campgrounds",
-    direction: "south"
+    direction: "south",
   },
   {
     id: 6,
     name: "Pine Bluffs Trails",
-    direction: "southeast"
-  }
-]
+    direction: "southeast",
+  },
+];
 
 const services = [
   { id: 1, name: "hiking" },
@@ -41,8 +41,8 @@ const services = [
   { id: 7, name: "parking" },
   { id: 8, name: "information" },
   { id: 9, name: "zip lines" },
-  { id: 10, name: "food vendors" }
-]
+  { id: 10, name: "rock climbing" },
+];
 
 const guests = [
   { id: 1, first_name: "John", last_name: "Doe", park_area_id: 1 },
@@ -52,8 +52,8 @@ const guests = [
   { id: 5, first_name: "Charlie", last_name: "Brown", park_area_id: 4 },
   { id: 6, first_name: "Diana", last_name: "Clark", park_area_id: 5 },
   { id: 7, first_name: "Ethan", last_name: "Lee", park_area_id: 6 },
-  { id: 8, first_name: "Fiona", last_name: "Davis", park_area_id: 6 }
-]
+  { id: 8, first_name: "Fiona", last_name: "Davis", park_area_id: 6 },
+];
 
 const serviceArea = [
   // Chamfort River
@@ -64,7 +64,7 @@ const serviceArea = [
   // Lost Wolf Hiking Trail
   { id: 4, park_area_id: 2, service_id: 1 }, // hiking
   { id: 5, park_area_id: 2, service_id: 5 }, // picnicking
-  { id: 6, park_area_id: 2, service_id: 9 }, // rock climbing not listed, replace with zip lines
+  { id: 6, park_area_id: 2, service_id: 10 }, // rock climbing
 
   // Lodge Area
   { id: 7, park_area_id: 3, service_id: 6 }, // lodging
@@ -85,10 +85,17 @@ const serviceArea = [
   { id: 16, park_area_id: 6, service_id: 1 }, // hiking
   { id: 17, park_area_id: 6, service_id: 5 }, // picnicking
   { id: 18, park_area_id: 6, service_id: 9 }, // zip lines
-  { id: 19, park_area_id: 6, service_id: 10 } // food vendors
-]
+];
 
-export const getParkAreas = () => [...parkAreas]
-export const getServices = () => [...services]
-export const getGuests = () => [...guests]
-export const getServiceArea = () => [...serviceArea]
+export const getParkAreas = () => {
+  return structuredClone(parkAreas);
+};
+export const getServices = () => {
+  return structuredClone(services);
+};
+export const getGuests = () => {
+  return structuredClone(guests);
+};
+export const getServiceArea = () => {
+  return structuredClone(serviceArea);
+};
