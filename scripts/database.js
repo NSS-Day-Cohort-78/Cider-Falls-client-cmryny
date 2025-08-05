@@ -88,7 +88,18 @@ const serviceArea = [
   { id: 19, park_area_id: 6, service_id: 10 } // food vendors
 ]
 
-export const getParkAreas = () => [...parkAreas]
-export const getServices = () => [...services]
-export const getGuests = () => [...guests]
-export const getServiceArea = () => [...serviceArea]
+export const getParkAreas = () => {
+  return structuredClone(parkAreas)
+}
+
+export const getServices = () => {
+  return structuredClone(services)
+}
+
+export const getGuests = () => {
+  return structuredClone(guests)
+}
+
+export const getServiceArea = () => {
+  return structuredClone(serviceArea)
+}
