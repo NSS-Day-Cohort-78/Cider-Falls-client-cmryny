@@ -10,7 +10,7 @@ const servicesHTMLForDOM = servicesHTML();
 
 const parkSiteHTML = `
 <section id="header">
-    <img src="___" alt="Cider Falls Park Logo"> <h1>Cider Falls Park</h1>
+    <img src="https://i.ibb.co/MxXmyHC5/Cider-Falls-Logo-w-Side-Type-NEW.png" alt="Cider Falls Park Logo"> <h1>Cider Falls Park</h1>
 </section>
 
 <article id="areas-and-services">
