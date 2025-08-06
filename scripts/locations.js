@@ -1,4 +1,22 @@
-import { getParkAreas, getServices, getServiceArea } from "./database.js"
+import { getParkAreas, getServices, getServiceArea, getGuests } from "./database.js"
+
+document.addEventListener(
+    "click",
+    (clickEvent) => {
+        const itemClicked = clickEvent.target
+        if(itemClicked.dataset.locationId) {
+            const locationId = parseInt(itemClicked.dataset.locationId)
+            const guests = getGuests()
+            let count = 0;
+            for (const guest of guests ) {
+                if (guest.park_area_id === locationId)
+                    count++
+            }
+            window.alert(`This location has ${count} guests.`)
+        }
+    }
+    
+)
 
 export const locationsHTML = () => {
     const locations = getParkAreas()
@@ -9,7 +27,7 @@ export const locationsHTML = () => {
 
     for (const location of locations) {
         locationHTML += `<section class="location-card">`
-        locationHTML += `<h2>${location.name}</h2>`
+        locationHTML += `<h2 data-location-id ="${location.id}">${location.name}</h2>`
         locationHTML += `<ul>`
 
         for (const serviceArea of serviceAreas) {
