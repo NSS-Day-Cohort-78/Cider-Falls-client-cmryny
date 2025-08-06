@@ -1,11 +1,10 @@
-//import { locationsHTML } from "./locations.js";
+import { locationsHTML } from "./locations.js";
 import { guestsHTML } from "./guests.js";
 import { servicesHTML } from "./services.js";
-console.log(guestsHTML())
 
 const mainContainer = document.querySelector(".main-container");
 
-//const locationsHTMLForDOM = locationsHTML();
+const locationsHTMLForDOM = locationsHTML();
 const guestsHTMLForDOM = guestsHTML();
 const servicesHTMLForDOM = servicesHTML();
 
