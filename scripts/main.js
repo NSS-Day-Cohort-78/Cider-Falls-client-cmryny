@@ -1,12 +1,12 @@
-// import { getLocationsHTML } from "./locations.js";
-// import { getGuestsHTML } from "./guests.js";
-// import { getServicesHTML } from "./services.js";
+import { locationsHTML } from "./locations.js";
+import { guestsHTML } from "./guests.js";
+import { servicesHTML } from "./services.js";
 
 // const mainContainer = document.querySelector("__");
 
-const locationsHTMLForDOM = getLocationsHTML();
-const guestsHTMLForDOM = getGuestsHTML();
-const servicesHTMLForDOM = getServicesHTML();
+const locationsHTMLForDOM = locationsHTML();
+const guestsHTMLForDOM = guestsHTML();
+const servicesHTMLForDOM = servicesHTML();
 
 const parkSiteHTML = `
 <section id="header">
@@ -14,7 +14,7 @@ const parkSiteHTML = `
 </section>
 
 <article id="areas-and-services">
-    <section class="services-list">
+    <section class="services">
         <h2>Park Services</h2>
         ${servicesHTMLForDOM()}
     </section>
@@ -36,4 +36,4 @@ const parkSiteHTML = `
 </section>
 `;
 
-// mainContainer.innerHTML = parkSiteHTML;
+mainContainer.innerHTML = parkSiteHTML;
