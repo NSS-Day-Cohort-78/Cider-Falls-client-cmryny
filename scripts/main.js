@@ -2,7 +2,7 @@ import { locationsHTML } from "./locations.js";
 import { guestsHTML } from "./guests.js";
 import { servicesHTML } from "./services.js";
 
-// const mainContainer = document.querySelector("__");
+const mainContainer = document.querySelector(".main-container");
 
 const locationsHTMLForDOM = locationsHTML();
 const guestsHTMLForDOM = guestsHTML();
@@ -16,17 +16,17 @@ const parkSiteHTML = `
 <article id="areas-and-services">
     <section class="services">
         <h2>Park Services</h2>
-        ${servicesHTMLForDOM()}
+    
     </section>
 
     <section class="locations">
-        ${locationsHTMLForDOM()}
+    
     </section>
 </article>
 
 <article id="guests">
     <h2>Our Guests</h2>
-    ${guestsHTMLForDOM()}
+    ${guestsHTMLForDOM}
 </article>
 
 <section id="footer">
