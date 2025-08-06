@@ -8,7 +8,7 @@ export const servicesHTML = () => {
   let servicesListHTML = '<div class="services-list">';
 
   for (const service of servicesArray) {
-    servicesListHTML += `<div data-type="service" data-serviceid="${service.id}" data-servicename="${service.name}">${service.name}</div>, `;
+    servicesListHTML += `<div data-type="service" data-serviceid="${service.id}" data-servicename="${service.name}">${service.name}, `;
   }
   servicesListHTML = servicesListHTML.slice(0, -2);
   servicesListHTML += "</div>";
@@ -17,7 +17,7 @@ export const servicesHTML = () => {
 };
 
 document.addEventListener("click", (clickEvent) => {
-  itemClicked = clickEvent.target;
+  const itemClicked = clickEvent.target;
 
   // make sure only type=service triggers alert
   if (itemClicked.dataset.type === "service") {
