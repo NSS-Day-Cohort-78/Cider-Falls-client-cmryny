@@ -32,16 +32,16 @@ const parkAreas = [
 ];
 
 const services = [
-  { id: 1, name: "hiking" },
-  { id: 2, name: "fishing" },
-  { id: 3, name: "canoeing" },
-  { id: 4, name: "rafting" },
-  { id: 5, name: "picnicking" },
-  { id: 6, name: "lodging" },
-  { id: 7, name: "parking" },
-  { id: 8, name: "information" },
-  { id: 9, name: "zip lines" },
-  { id: 10, name: "rock climbing" },
+  { id: 1, name: "Hiking" },
+  { id: 2, name: "Fishing" },
+  { id: 3, name: "Canoeing" },
+  { id: 4, name: "Rafting" },
+  { id: 5, name: "Picnicking" },
+  { id: 6, name: "Lodging" },
+  { id: 7, name: "Parking" },
+  { id: 8, name: "Information" },
+  { id: 9, name: "Zip Lines" },
+  { id: 10, name: "Rock Climbing" },
 ];
 
 const guests = [
