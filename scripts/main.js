@@ -1,10 +1,11 @@
-import { locationsHTML } from "./locations.js";
+//import { locationsHTML } from "./locations.js";
 import { guestsHTML } from "./guests.js";
 import { servicesHTML } from "./services.js";
+console.log(guestsHTML())
 
 const mainContainer = document.querySelector(".main-container");
 
-const locationsHTMLForDOM = locationsHTML();
+//const locationsHTMLForDOM = locationsHTML();
 const guestsHTMLForDOM = guestsHTML();
 const servicesHTMLForDOM = servicesHTML();
 
@@ -14,7 +15,7 @@ const parkSiteHTML = `
 </section>
 
 <article id="areas-and-services">
-    <section class="services">
+    <section class="services-list">
         <h2>Park Services</h2>
         ${servicesHTMLForDOM}
     </section>
