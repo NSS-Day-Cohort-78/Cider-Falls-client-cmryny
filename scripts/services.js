@@ -11,5 +11,5 @@ export const servicesHTML = () => {
   servicesListHTML = servicesListHTML.slice(0, -2);
   servicesListHTML += "</div>";
 
-  return servicesHTML;
+  return servicesListHTML;
 };
