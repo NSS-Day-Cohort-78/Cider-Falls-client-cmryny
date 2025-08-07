@@ -8,10 +8,10 @@ export const servicesHTML = () => {
   let servicesListHTML = '<div class="services-list">';
 
   for (const service of servicesArray) {
-    servicesListHTML += `<div data-type="service" data-serviceid="${service.id}" data-servicename="${service.name}">${service.name}, `;
+    servicesListHTML += `<span class="services" data-type="service" data-serviceid="${service.id}" data-servicename="${service.name}">${service.name}, `;
   }
   servicesListHTML = servicesListHTML.slice(0, -2);
-  servicesListHTML += "</div>";
+  servicesListHTML += "</span>";
 
   return servicesListHTML;
 };

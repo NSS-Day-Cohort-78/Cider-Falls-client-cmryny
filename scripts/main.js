@@ -12,27 +12,28 @@ const parkSiteHTML = `
 <section id="header">
     <img src="https://i.ibb.co/MxXmyHC5/Cider-Falls-Logo-w-Side-Type-NEW.png" alt="Cider Falls Park Logo">
 </section>
+<div class="twoColumns">
+    <article id="areas-and-services">
+        <section class="services-list">
+            <h2>Park Services</h2>
+            ${servicesHTMLForDOM}
+        </section>
 
-<article id="areas-and-services">
-    <section class="services-list">
-        <h2>Park Services</h2>
-        ${servicesHTMLForDOM}
-    </section>
+        <section class="locations">
+            ${locationsHTMLForDOM}
+        </section>
+    </article>
 
-    <section class="locations">
-        ${locationsHTMLForDOM}
-    </section>
-</article>
-
-<article id="guests">
-    <h2>Our Guests</h2>
-    ${guestsHTMLForDOM}
-</article>
+    <article id="guests">
+        <h2>Our Guests</h2>
+        ${guestsHTMLForDOM}
+    </article>
+</div>
 
 <section id="footer">
-    <div>(555) 555-5555</div>
-    <div>info@CiderFallsPark.com</div>
-    <div>1234 Main St. Nashville, TN 37209</div>
+    <span class="footer-item">(555) 555-5555</span>
+    <span class="footer-item">info@CiderFallsPark.com</span>
+    <span class="footer-item">1234 Main St. Nashville, TN 37209</span>
 </section>
 `;
 

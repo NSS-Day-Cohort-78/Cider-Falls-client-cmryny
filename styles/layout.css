@@ -1,0 +1,55 @@
+.locations {
+    max-width: 60rem;
+}
+
+#areas-and-services {
+    max-width: 60rem;
+    margin: 1rem;
+    margin-left: 6rem;
+}
+
+.locations-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60rem;
+    justify-content: space-around;
+}
+
+.location-card {
+    height: 12rem;
+    width: 12rem;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 60rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#guests {
+    max-width: 30rem;
+    min-width: 20rem;
+    padding: 16px;
+    margin-top: 9rem;
+    margin-right: 6rem;
+}
+
+.twoColumns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-item {
+    margin: 2rem;
+}
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
